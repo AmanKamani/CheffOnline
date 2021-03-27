@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_guideline">20dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="heading_text">22sp</dimen>
+
+</resources>

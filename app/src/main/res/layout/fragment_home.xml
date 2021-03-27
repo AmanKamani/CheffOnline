@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".auth.HomeFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+
+    <ImageView
+        android:id="@+id/iconLauncher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheffOnline"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/taglineTextView"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintStart_toEndOf="@id/iconLauncher"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/taglineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create The Best Food In Yout Kitchen"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/iconLauncher"
+        app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/headingTextView" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imgView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/cooking_lecture_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toTopOf="@id/signInButton"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/taglineTextView" />
+
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SingIn"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/signUpButton"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:textAllCaps="false"
+        android:padding="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/signInButton"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/signInButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
