@@ -12,4 +12,7 @@
     <string name="login_text_header">Login</string>
     <string name="launcher_image_text">Launcher Image</string>
     <string name="login_success_snackbar_text">SUCCESS</string>
+    <string name="error_email_invalid">You entered invalid email address</string>
+    <string name="error_password_empty">Password can\'t be blank</string>
+    <string name="error_email_password">Please enter valid email and a password</string>
 </resources>

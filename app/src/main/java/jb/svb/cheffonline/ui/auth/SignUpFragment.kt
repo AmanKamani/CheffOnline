@@ -1,4 +1,4 @@
-package jb.svb.cheffonline.auth
+package jb.svb.cheffonline.ui.auth
 
 import android.os.Bundle
 import android.view.View

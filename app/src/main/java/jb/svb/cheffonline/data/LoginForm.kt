@@ -1,17 +1,18 @@
 package jb.svb.cheffonline.data
 
 import android.util.Patterns
+import jb.svb.cheffonline.R
 
 data class LoginForm(
     var email: String = "",
     var password: String = ""
 ) {
 
-    private var errorMsg: String = ""
+    private var errorMsg: Int = -1
 
     fun validateEmail(): Boolean {
         if (email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            errorMsg = "You entered invalid email address"
+            errorMsg = R.string.error_email_invalid
             return false
         }
         return true
@@ -19,7 +20,7 @@ data class LoginForm(
 
     fun validatePassword(): Boolean {
         if (password.isEmpty()) {
-            errorMsg = "Password can't be blank"
+            errorMsg = R.string.error_password_empty
             return false
         }
         return true
@@ -27,13 +28,13 @@ data class LoginForm(
 
     fun validateLoginForm(): Boolean {
         if (!validateEmail() || !validatePassword()) {
-            errorMsg = "Please enter valid email and a password"
+            errorMsg = R.string.error_email_password
             return false
         }
         return true
     }
 
-    fun getErrorMessage(): String {
+    fun getErrorMessage(): Int {
         return errorMsg
     }
 }

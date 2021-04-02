@@ -1,10 +1,8 @@
-package jb.svb.cheffonline.auth
+package jb.svb.cheffonline.ui.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import jb.svb.cheffonline.R
 import jb.svb.cheffonline.databinding.FragmentHomeBinding
