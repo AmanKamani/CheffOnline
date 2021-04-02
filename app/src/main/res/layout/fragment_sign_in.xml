@@ -37,7 +37,6 @@
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:digits="qwertyuioplkjhgfdsazxcvbnm@."
             android:hint="@string/hint_enter_email_id"
             android:inputType="textEmailAddress" />
 
@@ -75,7 +74,7 @@
         android:layout_marginTop="20dp">
 
         <TextView
-            android:id="@+id/leftDevider"
+            android:id="@+id/divider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -89,7 +88,7 @@
             android:layout_height="1dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="16dp"
-            android:layout_toStartOf="@id/leftDevider"
+            android:layout_toStartOf="@id/divider"
             android:background="@color/black" />
 
         <View
@@ -97,7 +96,7 @@
             android:layout_height="1dp"
             android:layout_centerVertical="true"
             android:layout_marginEnd="16dp"
-            android:layout_toEndOf="@id/leftDevider"
+            android:layout_toEndOf="@id/divider"
             android:background="@color/black" />
 
     </RelativeLayout>
