@@ -7,4 +7,9 @@
     <string name="hint_enter_password">Enter Password</string>
     <string name="text_register">Register</string>
     <string name="text_sign_up">Sign-Up</string>
+    <string name="text_login">Login</string>
+    <string name="orTextDevider">OR</string>
+    <string name="login_text_header">Login</string>
+    <string name="launcher_image_text">Launcher Image</string>
+    <string name="login_success_snackbar_text">SUCCESS</string>
 </resources>

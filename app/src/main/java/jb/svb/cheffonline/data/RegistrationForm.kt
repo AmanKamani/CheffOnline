@@ -1,4 +1,4 @@
-package jb.svb.cheffonline.auth
+package jb.svb.cheffonline.data
 
 import android.util.Patterns
 

@@ -1,12 +1,12 @@
 package jb.svb.cheffonline.auth
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import jb.svb.cheffonline.R
+import jb.svb.cheffonline.data.RegistrationForm
 import jb.svb.cheffonline.databinding.FragmentSignUpBinding
 
 class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
