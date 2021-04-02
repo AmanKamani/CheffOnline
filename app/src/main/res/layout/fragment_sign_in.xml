@@ -43,11 +43,16 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_parent"
         style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
-        app:startIconDrawable="@drawable/ic_key">
+        app:startIconDrawable="@drawable/ic_key"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        app:helperText=""
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordEditText"

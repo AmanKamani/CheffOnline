@@ -28,13 +28,16 @@ class SignInFragment : Fragment(R.layout.fragment_sign_in) {
         binding.passwordEditText.addTextChangedListener {
             loginForm.password = it.toString()
             if (!loginForm.validatePassword()) {
-                binding.passwordEditText.error = loginForm.getErrorMessage()
+                binding.passwordTextParent.helperText = loginForm.getErrorMessage()
+            }
+            else {
+                binding.passwordTextParent.helperText = ""
             }
         }
 
         binding.loginButton.setOnClickListener {
             loginForm =
-                LoginForm(binding.emailEditText.toString(), binding.passwordEditText.toString())
+                LoginForm(binding.emailEditText.text.toString(), binding.passwordEditText.text.toString())
             if (!loginForm.validateLoginForm()) {
                 Snackbar.make(view, loginForm.getErrorMessage(), Snackbar.LENGTH_LONG).show()
             }
